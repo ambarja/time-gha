@@ -1,0 +1,13 @@
+name: 🕒 Imprimir hora actual
+
+on:
+  workflow_dispatch:  # permite ejecutarlo manualmente desde GitHub
+
+jobs:
+  print-time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar hora actual (UTC)
+        run: |
+          echo "Fecha y hora actual (UTC):"
+          date -u
